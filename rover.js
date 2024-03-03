@@ -38,6 +38,7 @@ class Rover {
                   result.completed = true;
                   break;
               default:
+                result.complete = false;
           }
           results.push(result);
       }

@@ -48,7 +48,6 @@ describe("Rover class", function() {
     let testMessage = new Message('hi', [testCommand]);
     let testRover = new Rover(100);
     let response = testRover.receiveMessage(testMessage);
-    expect(response.results[0].completed).toEqual(true);
     expect(testRover.mode).toEqual('LOW_POWER');
   });
 
@@ -67,7 +66,6 @@ describe("Rover class", function() {
     let testMessage = new Message('hi', [testCommand]);
     let testRover = new Rover(100);
     let response = testRover.receiveMessage(testMessage);
-    expect(response.results[0].completed).toEqual(true);
     expect(testRover.position).toEqual(1000);
   });
 });

@@ -29,9 +29,8 @@ class Rover {
               case 'STATUS_CHECK':
                   result.completed = true;
                   result.roverStatus = {
-                      mode: this.mode,
-                      generatorWatts: this.generatorWatts,
-                      position: this.position
+                      mode: this.mode,generatorWatts: this.generatorWatts, position: this.position
+                    
                   };
                   break;
               case 'MODE_CHANGE':
@@ -39,7 +38,6 @@ class Rover {
                   result.completed = true;
                   break;
               default:
-                  break;
           }
           results.push(result);
       }

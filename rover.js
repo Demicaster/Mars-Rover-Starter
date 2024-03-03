@@ -9,9 +9,6 @@ class Rover {
       this.generatorWatts = 110;
    }
    receiveMessage(message) {
-      if (!(message instanceof Message)) {
-          throw Error("Invalid message received.");
-      }
   
       let results = [];
   
